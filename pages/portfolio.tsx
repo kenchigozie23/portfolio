@@ -93,7 +93,7 @@ export default function Portfolio() {
         {/* -----Services ----- */}
         <Services />
         {/* -------Count Up */}
-        <div className="flex justify-center gap-12 flex-wrap" ref={ref}>
+        <div className="flex justify-center gap-12 flex-wrap">
           {countUpItems.map(item => (
             <div key={item.id} className="text-center">
               <div className="text-Orange text-3xl">
