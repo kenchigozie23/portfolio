@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import { motion } from "framer-motion";
 import {HiX} from "react-icons/hi"
-import {AiFillGithub,AiFillInstagram,AiFillTwitterCircle, AiOutlineMenu} from "react-icons/ai"
+import {AiFillGithub,AiFillLinkedin, AiOutlineMail, AiOutlineMenu} from "react-icons/ai"
 import { useEffect, useState } from "react";
 export default function Navbar() {
   const [showMenu,setShowMenu] = useState<boolean>(false)
@@ -74,17 +74,17 @@ export default function Navbar() {
           </Link>
         ))}
         <div className="fixed bottom-4 left-6 flex items-center flex-col gap-4">
-          <Link href="https://www.github.com">
+          <Link href="https://github.com/kenchigozie23">
             <AiFillGithub className={socialClassNames}/>
           </Link>
-          <Link href="https://www.instagram.com">
-            <AiFillInstagram className={socialClassNames}/>
+          <Link href="https://www.linkedin.com/in/kenneth-okoronkwo/">
+            < AiFillLinkedin className={socialClassNames}/>
           </Link>
-          <Link href="https://www.twitter.com">
-            <AiFillTwitterCircle className={socialClassNames}/>
+          <Link href="mailto:kenronkwo@gmail.com">
+            <AiOutlineMail className={socialClassNames}/>
           </Link>
         </div>
-        <HiX className="absolute text-White top-20 right-8 w-8 h-8 cursor-pointer" onClick={(prev) => setShowMenu(!prev)}/>
+        <HiX className="absolute text-White top-20 right-8 w-8 h-8 cursor-pointer shadow-lg rounded-xl   shadow-[#eeb844]" onClick={(prev) => setShowMenu(!prev)}/>
       </motion.nav>
     </header>
   )
