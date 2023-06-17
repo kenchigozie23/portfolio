@@ -4,13 +4,37 @@ import Wrapper from "@/components/Wrapper";
 import { projects } from "@/Data/Data";
 import {AiFillGithub,AiFillEye} from "react-icons/ai"
 import Services from "@/components/Services";
-import { countUpItems } from "@/Data/Data";
-import MyCountUp from "@/components/CountUp";
-import { useInView } from "react-intersection-observer";
+// import { countUpItems } from "@/Data/Data";
+// import MyCountUp from "@/components/CountUp";
+// import { useInView } from "react-intersection-observer";
+import { countUpItemsProps } from "@/Types";
+// import CountUp from "react-countup";
 export default function Portfolio() {
-  const {ref,inView} = useInView({
-    threshold: 0.5
-  })
+  // const {ref,inView} = useInView({
+  //   threshold: 0.5
+  // })
+  const countUpItems: countUpItemsProps[] = [
+    {
+      id: 1,
+      number: 3,
+      text: "Years of Experience",
+    },
+    {
+      id: 2,
+      number: 178,
+      text: "Satisfied Customers",
+    },
+    {
+      id: 3,
+      number: 742,
+      text: "Design Items",
+    },
+    {
+      id: 4,
+      number: 112,
+      text: "Clients Served",
+    },
+  ];
   return (
     <>
       <Head>
@@ -73,7 +97,7 @@ export default function Portfolio() {
           {countUpItems.map(item => (
             <div key={item.id} className="text-center">
               <div className="text-Orange text-3xl">
-                {inView && <MyCountUp start={0} end={item.number} duration={3}/>}+
+                {item.number}+
               </div>
               <div className="text-WhiteGray mt-2 text-sm">{item.text}</div>
             </div>
