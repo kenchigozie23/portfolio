@@ -73,15 +73,15 @@ const projects: ProjectProps[] = [
 ];
 
 const skills = [
-  { name: "HTML", level: 80 },
-  { name: "CSS", level: 90 },
-  { name: "JavaScript", level: 95 },
+  { name: "HTML", level: 97 },
+  { name: "CSS", level: 99 },
+  { name: "JavaScript", level: 96 },
   { name: "TypeScript", level: 97 },
-  { name: "ReactJS", level: 90 },
+  { name: "ReactJS", level: 96 },
   { name: "NextJS", level: 99 },
-  { name: "BootStrap", level: 90 },
+  { name: "BootStrap", level: 97 },
   { name: "Tailwind CSS", level: 95 },
-  { name: "Github", level: 80 },
+  { name: "Github", level: 99 },
   { name: "Apis", level: 99 },
 ];
 

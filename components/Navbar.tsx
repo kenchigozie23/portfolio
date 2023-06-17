@@ -2,9 +2,11 @@
 import { navLinks } from "@/Data/Data"
 import {usePathname} from "next/navigation"
 import Link from "next/link";
+// import Image from "next/image";
+
 import { motion } from "framer-motion";
-import {HiOutlineMenuAlt4,HiX} from "react-icons/hi"
-import {AiFillGithub,AiFillInstagram,AiFillTwitterCircle} from "react-icons/ai"
+import {HiX} from "react-icons/hi"
+import {AiFillGithub,AiFillInstagram,AiFillTwitterCircle, AiOutlineMenu} from "react-icons/ai"
 import { useEffect, useState } from "react";
 export default function Navbar() {
   const [showMenu,setShowMenu] = useState<boolean>(false)
@@ -51,7 +53,7 @@ export default function Navbar() {
     <header className={`fixed w-full top-0 left-0 z-20 ${navScroll ? "bg-Glass backdrop-blur-sm" : ""}`}>
       <nav className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${showMenu ? "hidden" : ""}`}>
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="text-3xl text-WhiteGray">Kenneth</Link>
+          <Link href="/" className="text-3xl text-WhiteGray pt-5 font-semibold">&lt;Techpro/&gt;</Link>
           <div className="hidden md:flex items-center justify-center space-x-4">
             {navLinks.map(navLink => (
               <Link key={navLink.path} href={navLink.path} className={`text-lg uppercase font-medium TextShadow ${isActive(navLink.path)}`}>
@@ -60,7 +62,7 @@ export default function Navbar() {
             ))}
           </div>
           <div className="flex md:hidden items-center">
-            <HiOutlineMenuAlt4 className="text-White cursor-pointer w-6 h-6" onClick={() => setShowMenu(!showMenu)}/>
+            <AiOutlineMenu className="text-White cursor-pointer w-8 h-8" onClick={() => setShowMenu(!showMenu)}/>
           </div>
         </div>
       </nav>
@@ -82,7 +84,7 @@ export default function Navbar() {
             <AiFillTwitterCircle className={socialClassNames}/>
           </Link>
         </div>
-        <HiX className="absolute text-White top-20 right-8 w-6 h-6 cursor-pointer" onClick={(prev) => setShowMenu(!prev)}/>
+        <HiX className="absolute text-White top-20 right-8 w-8 h-8 cursor-pointer" onClick={(prev) => setShowMenu(!prev)}/>
       </motion.nav>
     </header>
   )

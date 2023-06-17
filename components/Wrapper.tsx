@@ -2,8 +2,8 @@ import Link from "next/link";
 import { WrapperProps } from "@/Types";
 import {
   AiFillGithub,
-  AiFillInstagram,
-  AiFillTwitterCircle,
+  AiOutlineMail,
+  AiFillLinkedin,
 } from "react-icons/ai";
 
 export default function Wrapper({pageIndex,children,className}: WrapperProps) {
@@ -14,14 +14,14 @@ export default function Wrapper({pageIndex,children,className}: WrapperProps) {
       <>{children}</>
 
       <div className="fixed bottom-12 left-6 hidden md:flex items-center flex-col gap-4">
-        <Link href={"https://www.github.com"} target={"_blank"}>
+        <Link href={"https://github.com/kenchigozie23"} target={"_blank"}>
           <AiFillGithub className={socialClassNames} />
         </Link>
-        <Link href={"https://www.instagram.com"} target={"_blank"}>
-          <AiFillInstagram className={socialClassNames} />
+        <Link href={"mailto:kenronkwo@gmail.com"} target={"_blank"}>
+          <AiOutlineMail className={socialClassNames} />
         </Link>
-        <Link href={"https://www.twitter.com"} target={"_blank"}>
-          <AiFillTwitterCircle className={socialClassNames} />
+        <Link href={"https://www.linkedin.com/in/kenneth-okoronkwo/"} target={"_blank"}>
+          <AiFillLinkedin className={socialClassNames} />
         </Link>
       </div>
       <div className="fixed bottom-14 right-6 xs:text-3xl text-2xl text-Orange">
