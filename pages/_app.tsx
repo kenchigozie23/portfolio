@@ -5,9 +5,9 @@ import { Inter } from "next/font/google";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
 const inter = Inter({ subsets: ["latin"] });
-
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
+
   return (
     <main className={inter.className}>
       <Navbar />

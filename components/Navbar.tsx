@@ -9,6 +9,7 @@ import {HiX} from "react-icons/hi"
 import {AiFillGithub,AiFillLinkedin, AiOutlineMail, AiOutlineMenu} from "react-icons/ai"
 import { useEffect, useState } from "react";
 export default function Navbar() {
+ 
   const [showMenu,setShowMenu] = useState<boolean>(false)
   const [navScroll,setNavScroll] = useState<boolean>(false)
   const pathname = usePathname()
@@ -53,7 +54,7 @@ export default function Navbar() {
     <header className={`fixed w-full top-0 left-0 z-20 ${navScroll ? "bg-Glass backdrop-blur-sm" : ""}`}>
       <nav className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${showMenu ? "hidden" : ""}`}>
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="text-3xl text-WhiteGray pt-5 font-semibold">&lt;Techpro/&gt;</Link>
+          <Link href="/" className="text-3xl text-WhiteGray pt-5 font-semibold">Tech<span className="text-[#eeb844]">pro</span></Link>
           <div className="hidden md:flex items-center justify-center space-x-4">
             {navLinks.map(navLink => (
               <Link key={navLink.path} href={navLink.path} className={`text-lg uppercase font-medium TextShadow ${isActive(navLink.path)}`}>
@@ -72,7 +73,9 @@ export default function Navbar() {
           <Link key={navLink.label} href={navLink.path} className={`block px-3 py-2 text-5xl font-medium ${isActive(navLink.path)}`} onClick={(prev) => setShowMenu(!prev)}>
             {navLink.label}
           </Link>
+          
         ))}
+      
         <div className="fixed bottom-4 left-6 flex items-center flex-col gap-4">
           <Link href="https://github.com/kenchigozie23">
             <AiFillGithub className={socialClassNames}/>
@@ -84,8 +87,9 @@ export default function Navbar() {
             <AiOutlineMail className={socialClassNames}/>
           </Link>
         </div>
-        <HiX className="absolute text-White top-20 right-8 w-8 h-8 cursor-pointer shadow-lg rounded-xl   shadow-[#eeb844]" onClick={(prev) => setShowMenu(!prev)}/>
+        <HiX className="absolute text-White top-20 right-8 w-8 h-8 cursor-pointer shadow-lg rounded-xl border-none p-1  hover:scale-125 transition duration-100  shadow-[#eeb844]" onClick={(prev) => setShowMenu(!prev)}/>
       </motion.nav>
+   
     </header>
   )
 }
