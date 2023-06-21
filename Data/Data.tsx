@@ -35,7 +35,7 @@ const countUpItems: countUpItemsProps[] = [
   },
   {
     id: 3,
-    number: 742,
+    number: 400,
     text: "Design Items",
   },
   {
