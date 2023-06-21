@@ -26,7 +26,7 @@ export default function Portfolio() {
     },
     {
       id: 3,
-      number: 742,
+      number: 400,
       text: "Design Items",
     },
     {
