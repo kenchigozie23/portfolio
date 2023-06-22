@@ -51,38 +51,55 @@ const projects: ProjectProps[] = [
     img: "/project1.png",
     name: "Random Password Generator",
     tools: ["React", "Typescript", "Tailwind CSS"],
+    link: "",
+    github: "",
   },
   {
     id: 2,
     img: "/project2.jpg",
     name: "React E-commerce Website",
     tools: ["React", "Tailwind CSS"],
+    link: "",
+    github: "",
   },
   {
     id: 3,
     img: "/project3.jpg",
     name: "Shopping Cart",
     tools: ["React", "Redux-Toolkit", "Tailwind CSS"],
+    link: "",
+    github: "",
   },
   {
     id: 4,
     img: "/project4.jpg",
     name: "Autocomplete SearchBar",
     tools: ["React", "Typescript", "Tailwind CSS"],
+    link: "",
+    github: "",
+  },
+  {
+    id: 5,
+    img: "/project5.png",
+    name: "Food Delivery Site",
+    tools: ["HTML", "CSS", "JavaScript", "SASS"],
+    link: "https://food-services-ng.netlify.app/",
+    github: "https://github.com/kenchigozie23/food-site-service",
   },
 ];
 
 const skills = [
   { name: "HTML", level: 97 },
   { name: "CSS", level: 99 },
-  { name: "JavaScript", level: 96 },
+  { name: "JavaScript", level: 97 },
   { name: "TypeScript", level: 97 },
   { name: "ReactJS", level: 96 },
   { name: "NextJS", level: 99 },
-  { name: "BootStrap", level: 97 },
-  { name: "Tailwind CSS", level: 95 },
+  { name: "BootStrap", level: 98 },
+  { name: "Tailwind CSS", level: 98 },
   { name: "Github", level: 99 },
-  { name: "Apis", level: 99 },
+  { name: "Git", level: 99 },
+  { name: "REST APIs", level: 99 },
 ];
 
 const contacts: ContactsProps[] = [
@@ -91,4 +108,4 @@ const contacts: ContactsProps[] = [
   { id: 3, title: "Email", text: "kenronkwo@gmail.com" },
 ];
 
-export {navLinks, projects, countUpItems, services, skills, contacts };
+export { navLinks, projects, countUpItems, services, skills, contacts };

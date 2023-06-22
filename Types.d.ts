@@ -20,6 +20,9 @@ type ProjectProps = {
   img: string;
   name: string;
   tools: string[];
+  link: string;
+  github: string;
+
 };
 type CountUpProps = {
   start: number
