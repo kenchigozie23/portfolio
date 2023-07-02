@@ -39,7 +39,7 @@ export default function about() {
                 Contact Me
               </Link>
               <a
-                href="/pdf/my-resume.pdf"
+                href="/pdf/my__resume.pdf"
                 download
                 className="text-Orange font-semibold text-sm uppercase hover:underline"
               >

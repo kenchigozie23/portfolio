@@ -16,22 +16,22 @@ export default function Portfolio() {
   const countUpItems: countUpItemsProps[] = [
     {
       id: 1,
-      number: 3,
+      number: 2,
       text: "Years of Experience",
     },
     {
       id: 2,
-      number: 178,
+      number: 70,
       text: "Satisfied Customers",
     },
     {
       id: 3,
-      number: 400,
+      number: 40,
       text: "Design Items",
     },
     {
       id: 4,
-      number: 112,
+      number: 50,
       text: "Clients Served",
     },
   ];
@@ -71,7 +71,7 @@ export default function Portfolio() {
                     <Link href={project.github}>
                       <AiFillGithub className="text-3xl hover:scale-110 transition-all duration-300" />
                     </Link>
-                    <Link href={project.link}>
+                    <Link href={project.link} target="_blank">
                       <AiFillEye className="text-3xl hover:scale-110 transition-all duration-300" />
                     </Link>
                   </div>
