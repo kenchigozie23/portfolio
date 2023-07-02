@@ -27,7 +27,7 @@ export default function about() {
             </div>
             <p className="text-WhiteGray text-sm mt-8 leading-7">
               {" "}
-              I am a passionate frontend developer with a creative eye for
+              I'm a passionate frontend developer with a creative eye for
               design and a strong focus on delivering elegant and intuitive
               interfaces. Excited to collaborate on new projects!
             </p>
