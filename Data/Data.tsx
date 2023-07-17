@@ -102,11 +102,17 @@ const skills = [
   { name: "Javascript", level: 97 },
   { name: "Typescript", level: 97 },
   { name: "React", level: 96 },
-  { name: "NextJS", level: 99 },
+  { name: "Next js", level: 99 },
   { name: "Bootstrap", level: 98 },
   { name: "Tailwind CSS", level: 98 },
   { name: "Github", level: 99 },
   { name: "Git", level: 99 },
+  { name: "Node js", level: 99 },
+  { name: "Express js", level: 99 },
+  { name: "Mongo db", 
+  level: 99 },
+  { name: "GraphQL", level: 99 },
+  { name: "Prisma", level: 99 },
   { name: "REST APIs", level: 99 },
 ];
 

@@ -23,7 +23,7 @@ export default function about() {
               - Introduction
             </div>
             <div className="font-semibold text-3xl mt-8 text-White uppercase">
-              UI/UX Designer & FrontEnd Developer. 
+              UI/UX Designer, Freelancer & FrontEnd Developer. 
             </div>
             <p className="text-WhiteGray text-sm mt-8 leading-7">
               {" "}
