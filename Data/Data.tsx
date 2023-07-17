@@ -25,7 +25,7 @@ const services: ServiceProps[] = [
 const countUpItems: countUpItemsProps[] = [
   {
     id: 1,
-    number: 2,
+    number: 3,
     text: "Years of Experience",
   },
   {
