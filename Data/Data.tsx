@@ -17,10 +17,10 @@ const navLinks: NavLink[] = [
 ];
 
 const services: ServiceProps[] = [
-  { id: 1, title: "UI/UX Design", icon: <BsVectorPen />, finished: 113 },
-  { id: 2, title: "Web Developmemt", icon: <BsCode />, finished: 209 },
-  { id: 3, title: "Web Research", icon: <HiMagnifyingGlass />, finished: 369 },
-  { id: 4, title: "Marketing", icon: <FiBarChart />, finished: 313 },
+  { id: 1, title: "UI/UX Design", icon: <BsVectorPen />, finished: 30 },
+  { id: 2, title: "Web Developmemt", icon: <BsCode />, finished: 35 },
+  { id: 3, title: "Web Research", icon: <HiMagnifyingGlass />, finished: 40 },
+  { id: 4, title: "Marketing", icon: <FiBarChart />, finished: 20 },
 ];
 const countUpItems: countUpItemsProps[] = [
   {
