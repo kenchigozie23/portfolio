@@ -43,7 +43,7 @@ export default function Portfolio() {
       <Wrapper pageIndex={3}>
         <div className="flex flex-col pt-40 items-center text-center">
           <div className="uppercase font-semibold text-sm text-WhiteGray">
-            - Portfolio
+            - Projects
           </div>
           <div className="font-semibold text-3xl mt-8 text-White uppercase">
             My <span className="text-[#0ef]">Masterpiece</span>  Collections

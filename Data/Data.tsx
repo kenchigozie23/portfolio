@@ -12,7 +12,7 @@ import { HiMagnifyingGlass } from "react-icons/hi2";
 const navLinks: NavLink[] = [
   { path: "/", label: "Home" },
   { path: "/about", label: "About" },
-  { path: "/portfolio", label: "Portfolio" },
+  { path: "/portfolio", label: "Projects" },
   { path: "/contact", label: "Contact" },
 ];
 

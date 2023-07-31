@@ -4,8 +4,8 @@ import { toast } from "react-toastify";
 import {useEffect} from 'react'
 export default function Home() {
     useEffect(() => {
-      toast.success('👋 Welcome to my website !', {
-        position: "top-center",
+      toast.success('👋 Welcome to my portfolio !', {
+        position: "bottom-center",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,

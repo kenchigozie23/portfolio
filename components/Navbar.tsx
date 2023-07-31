@@ -90,7 +90,7 @@ export default function Navbar() {
             <AiOutlineMail className={socialClassNames}/>
           </Link>
         </div>
-        <HiX className="absolute text-White top-20 right-8 w-8 h-8 cursor-pointer shadow-lg rounded-xl border-none p-1  hover:scale-125 transition duration-100  shadow-[#eeb844]" onClick={(prev) => setShowMenu(!prev)}/>
+        <HiX className="absolute text-White top-20 right-8 w-8 h-8 cursor-pointer shadow-lg rounded-xl border-none p-1  hover:scale-125 transition duration-100  shadow-[#0ef]" onClick={(prev) => setShowMenu(!prev)}/>
       </motion.nav>
    
     </header>

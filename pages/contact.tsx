@@ -85,7 +85,7 @@ export default function contact() {
               className="mt-10 px-8 py-4 shadow-ShadowBlur uppercase text-sm cursor-pointer"
               onClick={() => {
                 toast.success("Message Successfully Sent", {
-                  position: "top-center",
+                  position: "bottom-center",
                   autoClose: 5000,
                   hideProgressBar: false,
                   closeOnClick: true,
