@@ -5,6 +5,8 @@ import { Inter } from "next/font/google";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
 import { ThemeProvider } from "next-theme";
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const inter = Inter({ subsets: ["latin"] });
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -39,6 +41,7 @@ export default function App({ Component, pageProps }: AppProps) {
         >
 
           <Component {...pageProps} />
+          <ToastContainer />
 
         </motion.div>
       </AnimatePresence>

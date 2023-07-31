@@ -1,7 +1,23 @@
 import Wrapper from "@/components/Wrapper";
 import Head from "next/head";
+import { toast } from "react-toastify";
+import {useEffect} from 'react'
 export default function Home() {
+    useEffect(() => {
+      toast.success('👋 Welcome to my portfolio website!', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+    }, [])
+
   return (
+    
     <>
       <Head>
         <title>Kenneth</title>

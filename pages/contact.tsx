@@ -1,11 +1,15 @@
 import Head from "next/head";
 import Wrapper from "@/components/Wrapper";
 import { contacts } from "@/Data/Data";
+import { toast } from "react-toastify";
+import { useEffect } from "react";
+
 // import { FormEvent } from "react";
 export default function contact() {
   // function submitHandler(e: FormEvent<HTMLFormElement>) {
   //   e.preventDefault()
   // }
+
   return (
     <>
       <Head>
@@ -26,7 +30,7 @@ export default function contact() {
             results.
           </p>
           <div>
-            {contacts.map(contact => (
+            {contacts.map((contact) => (
               <div className="mt-6" key={contact.id}>
                 <div className="text-xl font-medium mb-2">{contact.title}</div>
                 <div className="text-sm text-WhiteGray">{contact.text}</div>
@@ -35,21 +39,65 @@ export default function contact() {
           </div>
         </div>
         <div className="lg:w-1/2 sm:w-[30rem] px-6 text-center py-6 shadow-ShadowBlur">
-          <div className="uppercase md:text-4xl text-3xl md:tracking-widest tracking-wide font-semibold mb-10">Contact <span className="text-[#0ef]">Form</span> </div>
-          <form  action='https://getform.io/f/bf559128-abe6-4906-890d-29c673357287' method='POST'>
-          <div className="flex items-center border-b border-White py-2 mb-8" >
-            <input type="text" className=" appearance-none bg-transparent border-none w-full text-White mr-3 py-1 px-2 leading-tight focus:outline-none" placeholder="Name" name="Name" required/>
+          <div className="uppercase md:text-4xl text-3xl md:tracking-widest tracking-wide font-semibold mb-10">
+            Contact <span className="text-[#0ef]">Form</span>{" "}
           </div>
-          <div className="flex items-center border-b border-White py-2 mb-8">
-            <input type="text" className=" appearance-none bg-transparent border-none w-full text-White mr-3 py-1 px-2 leading-tight focus:outline-none" placeholder="Phone" name="Phone Number"/>
-          </div>
-          <div className="flex items-center border-b border-White py-2 mb-8">
-            <input type="email" className=" appearance-none bg-transparent border-none w-full text-White mr-3 py-1 px-2 leading-tight focus:outline-none" placeholder="Email" name="Email"/>
-          </div>
-          <div className="flex items-center border-b border-White py-2 mb-8">
-            <input type="text" className=" appearance-none bg-transparent border-none w-full text-White mr-3 py-1 px-2 leading-tight focus:outline-none" placeholder="Message" name="Message" required/>
-          </div>
-          <button type="submit" className="mt-10 px-8 py-4 shadow-ShadowBlur uppercase text-sm cursor-pointer">Send Message</button>
+          <form
+            action="https://getform.io/f/bf559128-abe6-4906-890d-29c673357287"
+            method="POST"
+          >
+            <div className="flex items-center border-b border-White py-2 mb-8">
+              <input
+                type="text"
+                className=" appearance-none bg-transparent border-none w-full text-White mr-3 py-1 px-2 leading-tight focus:outline-none"
+                placeholder="Name"
+                name="Name"
+                required
+              />
+            </div>
+            <div className="flex items-center border-b border-White py-2 mb-8">
+              <input
+                type="text"
+                className=" appearance-none bg-transparent border-none w-full text-White mr-3 py-1 px-2 leading-tight focus:outline-none"
+                placeholder="Phone"
+                name="Phone Number"
+              />
+            </div>
+            <div className="flex items-center border-b border-White py-2 mb-8">
+              <input
+                type="email"
+                className=" appearance-none bg-transparent border-none w-full text-White mr-3 py-1 px-2 leading-tight focus:outline-none"
+                placeholder="Email"
+                name="Email"
+              />
+            </div>
+            <div className="flex items-center border-b border-White py-2 mb-8">
+              <input
+                type="text"
+                className=" appearance-none bg-transparent border-none w-full text-White mr-3 py-1 px-2 leading-tight focus:outline-none"
+                placeholder="Message"
+                name="Message"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              className="mt-10 px-8 py-4 shadow-ShadowBlur uppercase text-sm cursor-pointer"
+              onClick={() => {
+                toast.success("Message Successfully Sent", {
+                  position: "top-center",
+                  autoClose: 5000,
+                  hideProgressBar: false,
+                  closeOnClick: true,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                  theme: "light",
+                });
+              }}
+            >
+              Send Message
+            </button>
           </form>
         </div>
       </Wrapper>
