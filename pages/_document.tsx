@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link  href='/icons8-favicon-48.png'  type='image/ico'/>
+        <link  href='/icons8-favicon-48.png'  type='image/png'/>
       </Head>
       <body className="bg-Black">
         <Main />

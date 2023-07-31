@@ -92,7 +92,7 @@ export default function contact() {
                   pauseOnHover: true,
                   draggable: true,
                   progress: undefined,
-                  theme: "light",
+                  theme: "dark",
                 });
               }}
             >
