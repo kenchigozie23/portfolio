@@ -46,7 +46,7 @@ export default function Portfolio() {
             - Portfolio
           </div>
           <div className="font-semibold text-3xl mt-8 text-White uppercase">
-            My Masterpiece Collections
+            My <span className="text-[#0ef]">Masterpiece</span>  Collections
           </div>
           <p className="text-WhiteGray text-sm mt-8 leading-7 max-w-3xl">
             I specialize in developing custom web applications that cater to

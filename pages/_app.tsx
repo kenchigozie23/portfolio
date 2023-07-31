@@ -4,12 +4,14 @@ import type { AppProps } from "next/app";
 import { Inter } from "next/font/google";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
+import { ThemeProvider } from "next-theme";
 const inter = Inter({ subsets: ["latin"] });
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   return (
     <main className={inter.className}>
+      <ThemeProvider attribute="class">
       <Navbar />
       <AnimatePresence mode="wait">
         <motion.div
@@ -35,9 +37,12 @@ export default function App({ Component, pageProps }: AppProps) {
             },
           }}
         >
+
           <Component {...pageProps} />
+
         </motion.div>
       </AnimatePresence>
+          </ThemeProvider>
     </main>
   );
 }

@@ -14,7 +14,7 @@ module.exports = {
       colors : {
         White: "#ffffff",
         Black: "#000000",
-        Orange: "#eeb844",
+        Orange: "#0ef",
         WhiteGray: "#b3b2b1",
         Blur: "rgba(255,255,255,0.075)",
         Glass: "rgba(255,255,255,0.15)"

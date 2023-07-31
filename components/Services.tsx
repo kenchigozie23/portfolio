@@ -6,7 +6,7 @@ export default function Services() {
         - Services
       </div>
       <div className="font-semibold text-3xl mt-8 text-White uppercase">
-        What I am Great At
+        What I am <span className="text-[#0ef]">Great</span> At
       </div>
       <p className="text-WhiteGray text-sm mt-8 leading-7 max-w-3xl mx-auto">
         I offer a full range of web development services, from website design

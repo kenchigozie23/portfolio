@@ -17,7 +17,7 @@ export default function contact() {
       >
         <div className="md:px-6 py-6 text-center">
           <div className="uppercase md:text-4xl text-3xl md:tracking-widest tracking-wide font-semibold">
-            Contact
+            <span className="text-[#0ef]">Contact</span>
           </div>
           <p className="leading-8 mb-8 text-sm max-w-xl mt-10 text-WhiteGray">
             If you're looking for a skilled frontend developer to help bring
@@ -35,7 +35,7 @@ export default function contact() {
           </div>
         </div>
         <div className="lg:w-1/2 sm:w-[30rem] px-6 text-center py-6 shadow-ShadowBlur">
-          <div className="uppercase md:text-4xl text-3xl md:tracking-widest tracking-wide font-semibold mb-10">Contact Form</div>
+          <div className="uppercase md:text-4xl text-3xl md:tracking-widest tracking-wide font-semibold mb-10">Contact <span className="text-[#0ef]">Form</span> </div>
           <form  action='https://getform.io/f/bf559128-abe6-4906-890d-29c673357287' method='POST'>
           <div className="flex items-center border-b border-White py-2 mb-8" >
             <input type="text" className=" appearance-none bg-transparent border-none w-full text-White mr-3 py-1 px-2 leading-tight focus:outline-none" placeholder="Name" name="Name" required/>
