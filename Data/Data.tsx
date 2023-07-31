@@ -108,10 +108,8 @@ const skills = [
   { name: "Github", level: 99 },
   { name: "Git", level: 99 },
   { name: "Node js", level: 99 },
-  { name: "Express js", level: 99 },
   { name: "Mongo db", 
-  level: 99 },
-  { name: "GraphQL", level: 99 },
+  level: 50 },
   { name: "Prisma", level: 99 },
   { name: "REST APIs", level: 99 },
 ];
