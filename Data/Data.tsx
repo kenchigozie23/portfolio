@@ -55,6 +55,22 @@ const projects: ProjectProps[] = [
     github: "https://github.com/kenchigozie23/ecommerce",
   },
   {
+    id: 1,
+    img: "/investa.png",
+    name: "Investa Website",
+    tools: ["Next JS", "Typescript", "Tailwind", "Framer-motion"],
+    link: "https://investa-website.vercel.app/",
+    github: "https://github.com/kenchigozie23/investa-website",
+  },
+  {
+    id: 1,
+    img: "/edu.png",
+    name: "E-learning Website",
+    tools: ["Next JS", "Typescript", "Tailwind", "Framer-motion"],
+    link: "https://kens-education.vercel.app/",
+    github: "https://github.com/kenchigozie23/education-website",
+  },
+  {
     id: 2,
     img: "/crypto1.png",
     name: "Crypto Price Tracker",
