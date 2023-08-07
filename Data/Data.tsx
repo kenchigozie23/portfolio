@@ -30,17 +30,17 @@ const countUpItems: countUpItemsProps[] = [
   },
   {
     id: 2,
-    number: 70,
+    number: 30,
     text: "Satisfied Customers",
   },
   {
     id: 3,
-    number: 40,
+    number: 35,
     text: "Design Items",
   },
   {
     id: 4,
-    number: 50,
+    number: 30,
     text: "Clients Served",
   },
 ];
@@ -55,7 +55,7 @@ const projects: ProjectProps[] = [
     github: "https://github.com/kenchigozie23/ecommerce",
   },
   {
-    id: 1,
+    id: 2,
     img: "/investa.png",
     name: "Investa Website",
     tools: ["Next JS", "Typescript", "Tailwind", "Framer-motion"],
@@ -63,7 +63,7 @@ const projects: ProjectProps[] = [
     github: "https://github.com/kenchigozie23/investa-website",
   },
   {
-    id: 1,
+    id: 3,
     img: "/edu.png",
     name: "E-learning Website",
     tools: ["Next JS", "Typescript", "Tailwind", "Framer-motion"],
@@ -71,7 +71,15 @@ const projects: ProjectProps[] = [
     github: "https://github.com/kenchigozie23/education-website",
   },
   {
-    id: 2,
+    id: 4,
+    img: "/port.png",
+    name: "Sample Portfolio Website",
+    tools: ["React JS", "Typescript", "Tailwind",],
+    link: "https://kendecoder.netlify.app/",
+    github: "https://github.com/kenchigozie23/sample-portfolio",
+  },
+  {
+    id: 5,
     img: "/crypto1.png",
     name: "Crypto Price Tracker",
     tools: ["React", "Tailwind CSS", "Binance API"],
@@ -79,7 +87,7 @@ const projects: ProjectProps[] = [
     github: "https://github.com/kenchigozie23/crypto-coins",
   },
   {
-    id: 3,
+    id: 6,
     img: "/flap2.png",
     name: "Flappy Bird Game",
     tools: ["HTML", "CSS", "Javascript"],
@@ -87,7 +95,7 @@ const projects: ProjectProps[] = [
     github: "https://github.com/kenchigozie23/flappy-game",
   },
   {
-    id: 4,
+    id: 7,
     img: "/desktop.png",
     name: "Resturant Landing Page",
     tools: ["HTML", "CSS", "Javascript"],
@@ -95,7 +103,7 @@ const projects: ProjectProps[] = [
     github: "https://github.com/kenchigozie23/resturant-landing-page",
   },
   {
-    id: 5,
+    id: 8,
     img: "/doc1.png",
     name: "Hospital Service Website",
     tools: ["HTML", "CSS", "Javascript"],
@@ -103,7 +111,7 @@ const projects: ProjectProps[] = [
     github: "https://github.com/kenchigozie23/hospital-page",
   },
   {
-    id: 6,
+    id: 9,
     img: "/project5.png",
     name: "Food Delivery Site",
     tools: ["HTML", "CSS", "Javascript", "SASS"],

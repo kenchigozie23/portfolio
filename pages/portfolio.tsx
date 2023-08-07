@@ -21,17 +21,17 @@ export default function Portfolio() {
     },
     {
       id: 2,
-      number: 70,
+      number: 45,
       text: "Satisfied Customers",
     },
     {
       id: 3,
-      number: 40,
+      number: 30,
       text: "Design Items",
     },
     {
       id: 4,
-      number: 50,
+      number: 40,
       text: "Clients Served",
     },
   ];
