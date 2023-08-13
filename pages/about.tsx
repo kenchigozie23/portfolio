@@ -23,11 +23,11 @@ export default function about() {
               - Introduction
             </div>
             <div className="font-semibold text-3xl mt-8 text-White uppercase">
-              UI/UX Designer, <span className="text-[#0ef]">Freelancer</span> & FrontEnd Developer. 
+              Software Developer, <span className="text-[#0ef]">Freelancer</span> & UI/UX Designer. 
             </div>
             <p className="text-WhiteGray text-md mt-8 leading-7">
               {" "}
-              I'm a software developer who specialize in creating intuitive frontend project with creative eye for
+              I'm a software developer, IT-Specialist and ux/ui designer,I  specialize in creating intuitive frontend project and software with creative eye for
               design and a strong focus on delivering elegant and intuitive
               interfaces. Excited to collaborate on new projects!
             </p>
@@ -39,7 +39,7 @@ export default function about() {
                 Contact Me
               </Link>
               <a
-                href="/pdf/resume.pdf"
+                href="/pdf/Resume_Ken.pdf"
                 download
                 className="text-Orange font-semibold text-sm uppercase hover:underline"
               >
