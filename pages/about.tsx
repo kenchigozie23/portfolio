@@ -27,7 +27,7 @@ export default function about() {
             </div>
             <p className="text-WhiteGray text-sm mt-8 leading-7">
               {" "}
-              I'm a software developer, an IT-Specialist, a freelancer ux/ui designer. I specialize in creating intuitive frontend project and software with creative eye for
+              I'm a Software developer, Freelancer, and an IT-Specialist. I specialize in creating intuitive frontend project and software with creative eye for
               design and a strong focus on delivering elegant and intuitive
               interfaces. Excited to collaborate on new projects!
             </p>
