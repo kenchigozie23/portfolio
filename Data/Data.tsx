@@ -13,6 +13,7 @@ const navLinks: NavLink[] = [
   { path: "/", label: "Home" },
   { path: "/about", label: "About" },
   { path: "/portfolio", label: "Projects" },
+   { path: "/contact", label: "Contact" },
   { path: "https://personal-blog-ken.vercel.app/", label: "Blog" },
 ];
 
